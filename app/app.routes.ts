@@ -293,6 +293,21 @@ export const routes = [
         data: { title: "Application Settings" }
     },
     {
+        path: "angular-directives",
+        loadChildren: () => require("./ui-category/ng-directives/ng-directives-examples.module")["NgDirectivesExamplesModule"],
+        data: { title: "Angular directives"}
+    },
+    {
+        path: "trace",
+        loadChildren: () => require("./trace/trace-examples.module")["TraceExamplesModule"],
+        data: { title: "Trace"}
+    },
+    {
+        path: "timer",
+        loadChildren: () => require("./timer/timer-examples.module")["TimerExamplesModule"],
+        data: { title: "Timer"}
+    },
+    {
         path: "camera",
         loadChildren: () => require("./camera/camera-examples.module")["CameraExamplesModule"],
         data: { title: "Camera" }
@@ -338,7 +353,6 @@ export const routes = [
         data: { title: "file-system" }
     }
 
-
     /*
     routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
     routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
@@ -364,12 +378,7 @@ export const routes = [
     routeEntry({ path: "readExampleComponent", component: ReadExampleComponent, data: { title: "Read" } }),
     routeEntry({ path: "updateExampleComponent", component: UpdateExampleComponent, data: { title: "Update" } }),
     routeEntry({ path: "deleteExampleComponent", component: DeleteExampleComponent, data: { title: "Delete" } }),
-    routeEntry({ path: "traceExampleComponent", component: TraceExamplesComponent, data: { title: "Trace Module" } }),
-    routeEntry({ path: "traceSpecificCategoriesExampleComponent", component: TraceSpecificCategoriesExampleComponent, data: { title: "Trace specific categories" } }),
-    routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a custom traceWriter" } }),
-    routeEntry({ path: "timerExamplesComponent", component: TimerExamplesComponent, data: { title: "Timer Module" } }),
-    routeEntry({ path: "setintervalTimerModuleExampleComponent", component: SetIntervalTimerModuleExampleComponent, data: { title: "setInterval example" } }),
-    routeEntry({ path: "settimeoutTimerModuleExample", component: SettimeoutTimerModuleExample, data: { title: "setTimeout example" } }),
+
     routeEntry({ path: "platformExamplesComponent", component: PlatformExamplesComponent, data: { title: "Platform Module" } }),
     routeEntry({ path: "platformModuleExampleComponent", component: PlatformModuleExampleComponent, data: { title: "Platform module example" } }),
     routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location Module" } }),
