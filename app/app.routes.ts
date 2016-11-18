@@ -146,12 +146,6 @@ import { CameraExamplesComponent } from "./camera/camera-examples.component";
 import { UsingCameraExampleComponent } from "./camera/using-camera/using-camera.component";
 */
 
-import { HexPipe } from "./color/creating-colors/creating-colors.component";
-
-export var examplePipes = [
-    HexPipe
-];
-
 export const routes = [
     {
         path: "",
@@ -312,6 +306,16 @@ export const routes = [
         path: "timer",
         loadChildren: () => require("./timer/timer-examples.module")["TimerExamplesModule"],
         data: { title: "Timer"}
+    },
+    {
+        path: "camera",
+        loadChildren: () => require("./camera/camera-examples.module")["CameraExamplesModule"],
+        data: { title: "Camera" }
+    },
+    {
+        path: "color",
+        loadChildren: () => require("./color/color-examples.module")["ColorExamplesModule"],
+        data: { title: "Color" }
     }
 
     /*

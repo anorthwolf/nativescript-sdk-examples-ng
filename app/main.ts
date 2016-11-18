@@ -2,7 +2,7 @@
 // >> ngmodule-config
 // >> (hide)
 import { platformNativeScriptDynamic, NativeScriptModule } from "nativescript-angular/platform";
-import { routes, examplePipes } from "./app.routes";
+import { routes } from "./app.routes";
 import { AppComponent } from "./app.component";
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
@@ -20,8 +20,8 @@ import { isIOS } from "platform"
     declarations: [
         AppComponent,
         ModalViewComponent,
-        ExampleTitleDirective, ToggleNavButtonDirective, 
-        ...examplePipes
+        ExampleTitleDirective, 
+        ToggleNavButtonDirective
     ],
 
     bootstrap: [AppComponent],

@@ -37,7 +37,7 @@ var mainMenuLinks = [
     new Link("HTTP Module", "/httpModuleComponent"),
     new Link("Application", "/application"),
     new Link("Application Settings", "/application-settings"),
-    new Link("Color", "/colorExamplesComponent"),
+    new Link("Color", "/color"),
     new Link("Connectivity", "/connectivityExamplesComponent"),
     new Link("Fetch", "/fetchExamplesComponent"),
     new Link("File System", "/fileSystemxamplesComponent"),
@@ -47,7 +47,7 @@ var mainMenuLinks = [
     new Link("DataEntry (extended examples)", "/extendedDataEntryExamplesComponent"),
     new Link("User Profile (extended examples)", "/extendedUserProfileExamplesComponent"),
     new Link("Content Screens", "/contentScreensExamplesComponent"),
-    new Link("Camera", "/cameraExamplesComponent"),  
+    new Link("Camera", "/camera"),  
 ];
 
 @Component({
