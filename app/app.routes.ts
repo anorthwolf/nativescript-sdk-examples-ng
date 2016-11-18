@@ -170,6 +170,16 @@ export const routes = [
         data: { title: "Color" }
     },
     {
+        path: "http",
+        loadChildren: () => require("./http/http-examples.module")["HttpExamplesModule"],
+        data: { title: "HTTP" }
+    },
+    {
+        path: "fps-meter",
+        loadChildren: () => require("./fps-meter/fps-meter-examples.module")["FpsExamplesModule"],
+        data: { title: "FPS Meter" }
+    },
+    {
         path: "content-screens",
         loadChildren: () => require("./common-screens-category/content-screens/content-screens-examples.module")["ContentScreensExamplesModule"],
         data: { title: "Content screens" }
