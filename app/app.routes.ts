@@ -316,6 +316,16 @@ export const routes = [
         path: "color",
         loadChildren: () => require("./color/color-examples.module")["ColorExamplesModule"],
         data: { title: "Color" }
+    },
+    {
+        path: "http",
+        loadChildren: () => require("./http/http-examples.module")["HttpExamplesModule"],
+        data: { title: "HTTP" }
+    },
+    {
+        path: "fps-meter",
+        loadChildren: () => require("./fps-meter/fps-meter-examples.module")["FpsExamplesModule"],
+        data: { title: "FPS Meter" }
     }
 
     /*
